@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -91,7 +91,7 @@ body {
 }
 
 .container {
-  min-width: 120rem;
+  max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
