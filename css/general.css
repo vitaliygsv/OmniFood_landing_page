@@ -15,7 +15,10 @@ body {
   color: #555;
 }
 
-/* General */
+strong {
+  font-weight: 500;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -60,7 +63,7 @@ body {
   display: inline-block;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-full:link,
