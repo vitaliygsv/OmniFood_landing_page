@@ -40,3 +40,24 @@ allLinks.forEach((link) =>
     }
   })
 );
+
+// Sticky Navigation
+const sectionHeroEl = document.querySelector('.section-hero');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    const [entry] = entries;
+
+    !entry.isIntersecting
+      ? document.body.classList.add('sticky')
+      : document.body.classList.remove('sticky');
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+  }
+);
+
+observer.observe(sectionHeroEl);
+
